@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "commonjs",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "ignoreDeprecations": "6.0",
+    "baseUrl": ".",
+    "paths": {
+      "@pages/*":     ["src/pages/*"],
+      "@api/*":       ["src/api/*"],
+      "@fixtures/*":  ["src/fixtures/*"],
+      "@utils/*":     ["src/utils/*"],
+      "@factories/*": ["src/factories/*"],
+      "@types-app/*": ["src/types/*"],
+      "@validators/*":["src/validators/*"]
+    }
+  },
+  "include": ["src/**/*.ts", "tests/**/*.ts", "playwright.config.ts"],
+  "exclude": ["node_modules", "dist"]
+}
